@@ -1,0 +1,30 @@
+# DBCleaner data params
+# List of fasta. Indicate the path to fasta file and the filters that will apply to it.
+
+fasta_1:
+  - file: C:\Users\ddelrioa\Desktop\Database_PE1_tr_y_sw\Sus_scrofa.Sscrofa11.1.pep.all.fasta
+  - filter_OR:
+    - None
+  - filter_AND:
+    - protein_coding
+    - gene_symbol
+
+
+fasta_2:
+  - file: C:\Users\ddelrioa\Desktop\Database_PE1_tr_y_sw\pig_202206_pro-sw-tr.target.fasta
+  - filter_OR:
+    - PE=1
+    - PE=2
+  - filter_AND:
+    - None
+
+fasta_3:
+  - file: C:\Users\ddelrioa\Desktop\Database_PE1_tr_y_sw\GCF_000003025.6_Sscrofa11.1_protein.fasta
+  - filter_OR:
+    - NP_
+  - filter_AND:
+    - None
+
+#Path of the file that will be created
+
+outfile: S:\U_Proteomica\UNIDAD\software\DBCleaner\Prueba_3_100.fasta
